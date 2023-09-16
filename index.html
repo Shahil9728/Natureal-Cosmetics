@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pinnacle Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <a href="index.html">
+            <img src="./assets/Logo1.png" draggable="false" style="cursor: pointer;">
+        </a>
+        <div class="header-item">
+            <a href="./pages/retouching.html">
+                <p>retouching</p>
+            </a>
+            <a href="./pages/contact.html">
+                <p>contact</p>
+            </a>
+        </div>
+        <img src="./assets/mobile-bar1.png" draggable="false" class="mobile-bar-ico"
+            onclick="var mobileFlag = false; var doc = document.querySelector('.mobile-side-bar'); doc.style.display = 'flex'; mobileFlag = true;">
+    </div>
+    <div class="mainheading">
+        We build amazing <br>websites and softwares
+    </div>
+    <section class="home">
+        <img src="assets/p1.png" alt="" class="homeimg">
+    </section>
+    <section class="code">
+        <img src="assets/p2.png" alt="" class="codeimg">
+        <div class="codehead">
+            <h1 class="codeheader">
+                Beautiful outside.
+                <br>Performant Inside.
+            </h1>
+            <p class="codesubhead">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, voluptates!
+            </p>
+        </div>
+    </section>
+    <section class="responsive">
+        <div class="resphead">
+            <h1 class="respheader">
+                Perfectly Responsive
+            </h1>
+            <p class="respsubhead">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, voluptates!
+            </p>
+        </div>
+        <img src="assets/iphone.png" alt="" class="respimg">
+        <img src="assets/resp1.5.png" alt="" class="respimg1">
+        <div class="respprojects">
+            <img src="assets/resp3.png" alt="" class="respimg2">
+            <img src="assets/p12.png" alt="" class="respimg3">
+            <img src="assets/resp5.png" alt="" class="respimg3 respimg4">
+            <img src="assets/resp6.png" alt="" class="respimg3 respimg5">
+            <img src="assets/resp7.png" alt="" class="respimg3 respimg5">
+            <div class="resp6scale">
+                <div class="mask">
+                    <img src="assets/resp9.png" alt="" class="respimg3 respimg6">
+                </div>
+            </div>
+        </div>
+        <div class="respfoot">
+            <h1 class="respfooter">
+                Perfectly Responsive
+            </h1>
+            <p class="respsubfoot">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, voluptates!
+            </p>
+        </div>
+        <div class="projimgs">
+            <img src="assets/pi1.png" alt="" class="porjimg proj1">
+            <img src="assets/pi2.png" alt="" class="porjimg proj2">
+            <img src="assets/pi3.png" alt="" class="porjimg proj3">
+            <img src="assets/pi4.png" alt="" class="porjimg proj4">
+            <img src="assets/pi5.png" alt="" class="porjimg proj5">
+            <img src="assets/pi6.png" alt="" class="porjimg proj6">
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footerhead">
+            <h1 class="footerheading">
+                Lets's create something <br> awesome together
+            </h1>
+            <div class="footerbtns">
+                <button class="btn btndark">
+                    Get in Touch with us
+                </button>
+                <button class="btn">
+                    Explore 3D
+                </button>
+            </div>
+        </div>
+        <div class="footermain">
+            <img src="assets/logo.png" alt="" class="footerlogo">
+            <div class="social">
+                <img src="assets/icon.png" alt="">
+                <img src="assets/icon1.png" alt="">
+                <img src="assets/icon2.png" alt="">
+            </div>
+        </div>
+        <div class="quicklink">
+            <a href="" class="quicklinks">contact</a>
+            <a href="" class="quicklinks">retouching</a>
+            <a href="" class="quicklinks">development</a>
+            <a href="" class="quicklinks">3D rendering</a>
+        </div>
+    </section>
+
+
+    <div class="mobile-side-bar">
+        <p onclick="var doc = document.querySelector('.mobile-side-bar'); doc.style.display = 'none'; mobileFlag = false;"
+            class="mobile-side-bar-close-ico">&times;</p>
+        <div class="mobile-side-bar-wrapper">
+            <a href="./pages/retouching.html">
+                <p>retouching</p>
+            </a>
+            <a href="./pages/retouching.html">
+                <p>development</p>
+            </a>
+            <a href="./pages/retouching.html">
+                <p>3D rendering</p>
+            </a>
+            <a href="./pages/retouching.html">
+                <p>about us</p>
+            </a>
+            <a href="./pages/contact.html">
+                <p>contact</p>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/app.js" type="module"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Retouching</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/retouching.css">
+</head>
+<style>
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .header-container {
+        width: 100%;
+        padding-left: 1rem;
+        display: flex;
+        margin-top: 36px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-item {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-right: 2rem;
+    }
+
+    .header-item>p {
+        font-size: 12.8px;
+        font-style: normal;
+        cursor: pointer;
+        font-weight: 500;
+        line-height: 150%;
+        color: #ffffff;
+    }
+
+    .mobile-bar-ico {
+        display: none;
+    }
+
+    .mobile-side-bar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+        background: #2c3e50;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-end;
+        display: none;
+    }
+
+    .mobile-side-bar>p {
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .mobile-side-bar-wrapper {
+        display: flex;
+        flex-direction: column;
+        font-size: 23px;
+        color: #fff;
+        gap: 20px;
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    .mobile-side-bar-wrapper>p {
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .mobile-side-bar-wrapper>p:hover {
+        color: #f57520;
+    }
+
+    @media screen and (max-width: 800px) {
+        .header-item {
+            display: none;
+        }
+
+        .mobile-bar-ico {
+            display: flex;
+            height: 30px;
+            width: 30px;
+            margin-right: 2rem;
+            cursor: pointer;
+        }
+
+        .mobile-side-bar {
+            padding-right: 3rem;
+        }
+    }
+</style>
+
+<body style="background-color: white;">
+    <section class="rsect1">
+        <div class="rherosection">
+            <div class="header-container">
+                <a href="../index.html">
+                    <img src="../assets/logo3.png" draggable="false" style="cursor: pointer;">
+                </a>
+                <div class="header-item">
+                    <a href="./retouching.html">
+                        <p>retouching</p>
+                    </a>
+                    <a href="./contact.html">
+                        <p>contact</p>
+                    </a>
+                </div>
+                <img src="../assets/mobile-bar.png" draggable="false" class="mobile-bar-ico"
+                    onclick="var mobileFlag = false; var doc = document.querySelector('.mobile-side-bar'); doc.style.display = 'flex'; mobileFlag = true;">
+            </div>
+            <div class="rheadingsection">
+                <div class="mainheading rsubheading1">
+                    Images that captivate <br> your audience
+                </div>
+                <div class="mainheading rsubheading2 ">
+                    Processed to Perfection
+                    <p>Lorem ipsum dolor sit amet ac vitae maecenas scelerisque eget malesuada tortor. Praesent tellus
+                        viverra tempor augue ullamcorper quis nullam vivamus.</p>
+                </div>
+            </div>
+            <div class="rheroimgsection">
+                <img src="../assets/billboard.png" alt="" class="rheroimg hero1">
+                <img src="../assets/imagelayers.png" alt="" class="rheroimg hero2">
+                <img src="../assets/Toolbar.png" alt="" class="rheroimg hero3">
+                <div class="rmask">
+                    <img src="../assets/imagegrid.png" alt="" class="rheroimg hero4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rsection2">
+        <div class="rcartext">
+            <div class="carheader">
+                <div class="rcarheading">
+                    <h1>
+                        Product image that sell
+                    </h1>
+                </div>
+                <div class="rcarsubheading">
+                    Lorem ipsum dolor sit amet ac vitae maecenas scelerisque eget malesuada tortor. Praesent
+                    tellus
+                    viverra tempor augue ullamcorper quis nullam vivamus.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rcompostion">
+        <div class="rcompheader">
+            <h1>
+                Compositions that Look Real
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet ac vitae maecenas scelerisque eget malesuada tortor. Praesent tellus
+                viverra tempor augue ullamcorper quis nullam vivamus.
+            </p>
+        </div>
+        <div class="rcompostimgs">
+            <div class="rcomi">
+                <img src="../assets/rcom1ii.png" alt="" class="rimg rimg1ii">
+                <img src="../assets/rcom1i.png" alt="" class="rimg rimg1i">
+            </div>
+            <div class="rcomimgs">
+                <div class="comii">
+                    <img src="../assets/rcom2ii.png" alt="" class="rimg rimg2i">
+                    <img src="../assets/m1.png" alt="" class="rimg rimg2ii">
+                </div>
+                <div class="rcomiii">
+                    <img src="../assets/rcom3i.png" alt="" class="rimg rimg3i">
+                    <img src="../assets/rcom3ii.png" alt="" class="rimg rimg3ii">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rprojects">
+        <div class="rprojimgs">
+            <img src="../assets/r1.png" alt="" class="rporjimg rproj1">
+            <img src="../assets/r2.png" alt="" class="rporjimg rproj2">
+            <img src="../assets/r3.png" alt="" class="rporjimg rproj3">
+            <img src="../assets/r4.png" alt="" class="rporjimg rproj4">
+            <img src="../assets/r5.png" alt="" class="rporjimg rproj5">
+            <img src="../assets/r6.png" alt="" class="rporjimg rproj6">
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <div class="footerhead">
+            <h1 class="footerheading">
+                Lets's create something <br> awesome together
+            </h1>
+            <div class="footerbtns">
+                <button class="btn btndark">
+                    Get in Touch with us
+                </button>
+                <button class="btn">
+                    Explore 3D
+                </button>
+            </div>
+        </div>
+        <div class="footermain">
+            <img src="../assets/logo.png" alt="" class="footerlogo">
+            <div class="social">
+                <img src="../assets/icon.png" alt="">
+                <img src="../assets/icon1.png" alt="">
+                <img src="../assets/icon2.png" alt="">
+            </div>
+        </div>
+        <div class="quicklink">
+            <a href="" class="quicklinks">contact</a>
+            <a href="" class="quicklinks">retouching</a>
+            <a href="" class="quicklinks">development</a>
+            <a href="" class="quicklinks">3D rendering</a>
+        </div>
+    </section>
+
+
+
+    <div class="mobile-side-bar">
+        <p onclick="var doc = document.querySelector('.mobile-side-bar'); doc.style.display = 'none'; mobileFlag = false;"
+            class="mobile-side-bar-close-ico">&times;</p>
+        <div class="mobile-side-bar-wrapper">
+            <p>retouching</p>
+            <p>development</p>
+            <p>3D rendering</p>
+            <p>about us</p>
+            <p>contact</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="../js/app.js" type="module"></script>
+
+</body>
+
+</html>
